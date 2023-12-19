@@ -1,0 +1,24 @@
+.logo {
+  height: 80px;
+}
+.logo img {
+  margin: 0 auto;
+}
+.header__logo {
+  margin-bottom: 35px;
+}
+
+@media (max-width: 860px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    margin: 0 auto;
+  }
+  .logo img {
+    width: 39px;
+  }
+}

@@ -4,7 +4,8 @@ import "./functions/Header";
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+		  <header>
+			  <header />
     </div>
   );
 }

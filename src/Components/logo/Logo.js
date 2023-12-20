@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import LinkImage from "../link-image/LinkImage";
+import LinkImage from "../linkImage/LinkImage";
 import "./logo.css";
 
 const Logo = (props) => (

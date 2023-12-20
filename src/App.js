@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./components/header/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Header from "./Components/header/Header";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
 function App() {
   return (
     <div className="App">

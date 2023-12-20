@@ -1,0 +1,13 @@
+@media (max-width: 1000px) {
+	.menu {
+	  margin-right: auto;
+	}
+}
+
+@media (max-width: 860px) {
+
+	.menu {
+	  order: -1;
+	  margin-right: 0;
+	}
+}

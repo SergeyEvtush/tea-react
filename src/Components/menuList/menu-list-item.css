@@ -1,0 +1,41 @@
+.link-menu {
+  font-weight: 400;
+  font-size: 18px;
+  display: block;
+}
+.link-menu:hover {
+  transform: scale(1.2);
+  transition: all 0.1s linear 0.1s;
+}
+
+.menu__close {
+  display: none;
+}
+@media (max-width: 860px) {
+  .link-menu {
+    font-family: Cormorant;
+    font-size: 24px;
+  }
+  .menu__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .menu__close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .close-link {
+    display: block;
+  }
+  .close-btn {
+    position: relative;
+    cursor: pointer;
+  }
+  .close-btn img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

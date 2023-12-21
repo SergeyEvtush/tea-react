@@ -1,0 +1,25 @@
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 0 65px;
+  margin-left: 85px;
+  height: 27px;
+  list-style: none;
+}
+@media (max-width: 860px) {
+  .menu__list {
+    /* display: none; */
+    display: block;
+    position: absolute;
+    top: -200%;
+    transition: all 0.5s ease 0.5s;
+    left: calc(50% - 360px / 2);
+    text-align: center;
+    width: 360px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-top: 60px;
+    min-height: 691px;
+    z-index: 5;
+  }
+}

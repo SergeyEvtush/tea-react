@@ -1,12 +1,12 @@
 import "./App.css";
-import Header from "./Components/header/Header";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
+import Header from "./components/header/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 function App() {
-	const data = ["Black","Green","White","Oolong","Pu-erh"];
+  const data = ["Black", "Green", "White", "Oolong", "Pu-erh"];
   return (
     <div className="App">
-		  <Header data={data}></Header>
+      <Header data={data}></Header>
       <Main></Main>
       <Footer></Footer>
     </div>

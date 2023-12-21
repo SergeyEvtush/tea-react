@@ -1,14 +1,31 @@
-import './menu-list.css'
-import MenuListItem from './MenuListItem';
+import "./menu-list.css";
+import Close from "../images/close.svg";
+import MenuListItem from "./MenuListItem";
 
-const MenuList = ({data}) => {
+const MenuList = ({ data }) => {
+  const elements = data.map((el, index) => {
+    return (
+      <MenuListItem
+        classDiv={"item-wrapper"}
+        classItem={"menu__item"}
+        classLink={"menu__link link-menu"}
+        text={el}
+        key={el + index}
+      />
+    );
+  });
 
-	const elements = data.map(el => { 
-		return <MenuListItem {...el} classItem={"test-li" } />
-	})
-
-	return (<ul className='menu__list'>
-		{ elements}
-	</ul>)
+  return (
+    <ul className="menu__list">
+      <MenuListItem
+        classDiv={"close-btn"}
+        classItem={"menu__close"}
+        classLink={"close-link"}
+        key={"close"}
+        text={<img src={Close} alt="close"></img>}
+      />
+      {elements}
+    </ul>
+  );
 };
 export default MenuList;

@@ -1,7 +1,11 @@
 import './nav.css'
+import Burger from '../burger/Burger';
+import MenuList from '../menuList/MenuList';
 
-
-const Nav = (props) => (
-	<nav className='menu'>{ props.content}</nav>
+const Nav = ({data}) => (
+	<nav className='menu'>
+		<Burger/>
+		<MenuList data={data}/>
+	</nav>
 );
 export default Nav;

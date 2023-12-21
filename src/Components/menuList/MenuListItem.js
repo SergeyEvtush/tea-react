@@ -1,11 +1,11 @@
 import './menu-list-item.css'
 import LinkImage from '../linkImage/LinkImage';
 
-const MenuListItem = (props) => (
-	<li className={props.classItem} textLink={props.text}>
+const MenuListItem = (props,el) => (
+	<li className={props.classItem}>
 		<LinkImage url={"#"}
 						class={"test-class"}
-						content={props.text}>
+						content={el}>
 		</LinkImage>
 	</li>
 );

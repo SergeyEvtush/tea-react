@@ -2,7 +2,7 @@ import './burger.css'
 
 
 const Burger = () => (
-	<div class="burger">
+	<div className="burger">
               <button
                 className="menu__btn"
                 type="button"

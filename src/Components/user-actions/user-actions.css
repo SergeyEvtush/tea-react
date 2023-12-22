@@ -1,0 +1,32 @@
+.user-actions {
+	display: flex;
+	align-items: flex-start;
+	gap: 0 20px;
+	line-height: 0.5;
+	min-width: 180px;
+	min-height: 29px;
+ }
+ .user-actions__item {
+	display: block;
+	height: 100%;
+  transition: rotate 0.5s linear 0.5s;
+ }
+ .user-actions__item:hover{
+	 animation:hover-animation 0.5s linear 0.5s;
+ }
+ .user-actions__item:not(:last-child) {
+	margin-right: 20px;
+ }
+
+
+ @media (max-width: 1000px) {
+	.user-actions {
+	  min-width: 130px;
+	}
+}
+
+@media (max-width: 360px) {
+	.user-actions {
+	  min-width: 100px;
+	}
+}

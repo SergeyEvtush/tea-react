@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./Components/header/Header";
-import Main from "./Components/Main";
+import Main from "./Components/main/Main";
 import Footer from "./Components/Footer";
 function App() {
   const data = ["Black", "Green", "White", "Oolong", "Pu-erh"];

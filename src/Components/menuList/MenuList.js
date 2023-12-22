@@ -2,8 +2,8 @@ import "./menu-list.css";
 import Close from "../images/close.svg";
 import ListItem from "../listItem/ListItem";
 
-const MenuList = ({ data }) => {
-  const elements = data.map((el, index) => {
+const MenuList = ({ dataMenu }) => {
+  const elementsMenu = dataMenu.mainMenu.map((el, index) => {
     return (
       <ListItem
         classDiv={"item-wrapper"}
@@ -11,6 +11,17 @@ const MenuList = ({ data }) => {
         classLink={"menu__link link-menu"}
         text={el}
         key={el + index}
+      />
+    );
+  });
+  const elementsMobileMenu = dataMenu.mobileMenu.map((elem, index) => {
+    return (
+      <ListItem
+        classDiv={"mobile-menu__item-wraper"}
+        classItem={"mobile-menu__item"}
+        classLink={"mobile-menu__link"}
+        key={elem + index}
+        text={elem}
       />
     );
   });
@@ -24,7 +35,10 @@ const MenuList = ({ data }) => {
         key={"close"}
         text={<img src={Close} alt="close"></img>}
       />
-      {elements}
+      {elementsMenu}
+      <li className="mobile-nav">
+        <ul className="mobile-menu">{elementsMobileMenu}</ul>
+      </li>
     </ul>
   );
 };

@@ -1,12 +1,16 @@
 import "./App.css";
-import Header from "./Components/header/Header";
-import Main from "./Components/main/Main";
-import Footer from "./Components/Footer";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import Footer from "./components/Footer";
 function App() {
-  const data = ["Black", "Green", "White", "Oolong", "Pu-erh"];
+  const dataMenu = {
+    mainMenu: ["Black", "Green", "White", "Oolong", "Pu-erh"],
+    mobileMenu: ["Contact Us", "Our Blog", "Shipping and Delivery"],
+  };
+
   return (
     <div className="App">
-      <Header data={data}></Header>
+      <Header dataMenu={dataMenu}></Header>
       <Main></Main>
       <Footer></Footer>
     </div>

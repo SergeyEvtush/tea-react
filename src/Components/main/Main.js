@@ -1,11 +1,12 @@
 import Top from "../top/Top";
+import Bloquote from "../bloquote/Bloquote";
 
 
-
-const Main = () => (
+const Main = ({dataText}) => (
 	<div>
 		<main className="main">
-			<Top></Top>
+			<Top dataText={dataText}></Top>
+			<Bloquote dataText={dataText } />
 		</main>
 	</div>
 );

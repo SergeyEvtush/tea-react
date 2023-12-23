@@ -1,0 +1,38 @@
+.blockquote__text {
+	text-align: center;
+	font-family: Cormorant;
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: normal;
+	max-width: 704px;
+	margin: 150px auto;
+	color:black;
+ }
+ @media (max-width: 1000px) {
+	.blockquote__text {
+	  margin-top: 120px;
+	  margin-bottom: 135px;
+	}
+ }
+	@media (max-width: 768px) {
+		.blockquote__text {
+		  max-width: 640px;
+		}
+	}
+
+	@media (max-width: 680px) {
+		.blockquote__text {
+		  font-size: 16px;
+		  max-width: 376px;
+		  margin-top: 60px;
+		  margin-bottom: 60px;
+		}
+	}
+	@media (max-width: 360px) {
+		.blockquote__text {
+		  max-width: 340px;
+		  margin-top: 70px;
+		  margin-bottom: 80px;
+		}
+	}

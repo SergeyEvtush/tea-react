@@ -1,20 +1,20 @@
 import "./menu-list.css";
-import Close from "../images/close.svg";
+import Close from "./img/close.svg";
 import ListItem from "../listItem/ListItem";
 
 const MenuList = ({ dataMenu }) => {
-  const elementsMenu = dataMenu.mainMenu.map((el, index) => {
+  const elementsMenu = dataMenu[0].map((el, index) => {
     return (
       <ListItem
         classDiv={"item-wrapper"}
         classItem={"menu__item"}
         classLink={"menu__link link-menu"}
-        text={el}
-        key={el + index}
+        text={el.name}
+        key={el.name + index}
       />
     );
   });
-  const elementsMobileMenu = dataMenu.mobileMenu.map((elem, index) => {
+  const elementsMobileMenu = dataMenu[1].map((elem, index) => {
     return (
       <ListItem
         classDiv={"mobile-menu__item-wraper"}

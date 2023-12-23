@@ -10,9 +10,9 @@ const Assortment = ({ dataAssortment }) => (
           <div>
             <TitleBlock
               classH2={"assortment__title title-block"}
-              text={"Explore our Collections"}
+              text={dataAssortment[1].assortmentTitle}
             />
-            <AssortmentList dataList={dataAssortment} />
+            <AssortmentList dataList={dataAssortment[0]} />
           </div>
         }
       />

@@ -1,0 +1,16 @@
+.reviews {
+  margin-bottom: 150px;
+}
+.reviews__title {
+  margin-bottom: 60px;
+}
+@media (max-width: 1000px) {
+  .reviews {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .reviews {
+    margin-bottom: 60px;
+  }
+}

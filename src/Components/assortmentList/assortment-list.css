@@ -1,6 +1,3 @@
-.assortment {
-  margin-bottom: 150px;
-}
 .assortment__list {
   text-align: center;
   display: flex;
@@ -23,9 +20,6 @@
   .assortment__list {
     gap: 0;
   }
-  .assortment {
-    margin-bottom: 120px;
-  }
   .assortment__title {
     margin-bottom: 30px;
   }
@@ -36,15 +30,7 @@
     justify-content: center;
   }
 }
-@media (max-width: 480px) {
-  .assortment {
-    margin-bottom: 60px;
-  }
-}
 @media (max-width: 360px) {
-  .assortment {
-    margin-bottom: 80px;
-  }
   .assortment__img {
     max-width: 170px;
   }

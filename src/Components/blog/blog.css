@@ -1,8 +1,25 @@
+.blog {
+  margin-bottom: 150px;
+}
+.blog__title {
+  margin-bottom: 60px;
+}
+
 .view-btn {
-	padding: 12px 41px;
- }
- .blog__button {
-	display:flex;
-	align-items: center;
-	justify-content: center;
+  padding: 12px 41px;
+}
+.blog__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .blog {
+    margin-bottom: 180px;
+  }
+}
+@media (max-width: 360px) {
+  .blog {
+    margin-bottom: 100px;
+  }
 }

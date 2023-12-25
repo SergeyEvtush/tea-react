@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./Components/header/Header";
-import Main from "./Components/main/Main";
-import Footer from "./Components/Footer";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import Footer from "./components/Footer";
 import Black from "./img/varietiesOfTea/black.jpg";
 import Green from "./img/varietiesOfTea/green.jpg";
 import White from "./img/varietiesOfTea/white.jpg";
@@ -58,37 +58,37 @@ function App() {
           "I am not a big tea drinker, but this tea store has converted me. I highly recommend this tea store to anyone looking for a high-quality tea experience.",
         author: "March Hare",
       },
-	  ],
-	  postData: [
-		  {
-			  postTitle: "Tea Time Travels: Funny Moments from Around the World",
-			  postAuthor: "Robinson Crusoe",
-			  postImage: PostImage1,
-			  postContent:"",
-			  url:""
-		  },
-		  {
-			  postTitle: "Tea-rific Tales: Hilarious Stories from Tea Lovers",
-			  postAuthor: "Casper the Friendly Ghost",
-			  postImage: PostImage2,
-			  postContent:"",
-			  url:""
-		  },
-		  {
-			  postTitle: "The Role of Tea in Mental Health",
-			  postAuthor: "Joker",
-			  postImage: PostImage3,
-			  postContent:"",
-			  url:""
-		  },
-		  {
-			  postTitle: "Tea and Caffeine: Effects on the Brain and Behavior",
-			  postAuthor: "Author Authorius",
-			  postImage: PostImage4,
-			  postContent: "",
-			  url:""
-		  },
-	 ]
+    ],
+    postData: [
+      {
+        postTitle: "Tea Time Travels: Funny Moments from Around the World",
+        postAuthor: "Robinson Crusoe",
+        postImage: PostImage1,
+        postContent: "",
+        url: "",
+      },
+      {
+        postTitle: "Tea-rific Tales: Hilarious Stories from Tea Lovers",
+        postAuthor: "Casper the Friendly Ghost",
+        postImage: PostImage2,
+        postContent: "",
+        url: "",
+      },
+      {
+        postTitle: "The Role of Tea in Mental Health",
+        postAuthor: "Joker",
+        postImage: PostImage3,
+        postContent: "",
+        url: "",
+      },
+      {
+        postTitle: "Tea and Caffeine: Effects on the Brain and Behavior",
+        postAuthor: "Author Authorius",
+        postImage: PostImage4,
+        postContent: "",
+        url: "",
+      },
+    ],
   };
 
   return (
@@ -102,8 +102,8 @@ function App() {
           data.paragraphTitle,
           data.bloquoteText,
           data.mainMenu,
-				  data.reviewsData,
-			 data.postData
+          data.reviewsData,
+          data.postData,
         ]}
       ></Main>
       <Footer></Footer>

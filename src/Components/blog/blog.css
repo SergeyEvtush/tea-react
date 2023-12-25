@@ -1,0 +1,8 @@
+.view-btn {
+	padding: 12px 41px;
+ }
+ .blog__button {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}

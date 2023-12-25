@@ -1,0 +1,18 @@
+.assortment {
+  margin-bottom: 150px;
+}
+@media (max-width: 1000px) {
+  .assortment {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .assortment {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 360px) {
+  .assortment {
+    margin-bottom: 80px;
+  }
+}

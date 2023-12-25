@@ -10,8 +10,8 @@ const Header = ({ dataMenu }) => (
         content={
           <div className="header__inner">
             <Logo url={"#"} class={"logo header__logo link-image"}></Logo>
-            <Nav dataMenu={dataMenu}></Nav>
-            <UserActions />
+            <Nav dataMenu={[dataMenu[0], dataMenu[1]]}></Nav>
+            <UserActions dataActions={dataMenu[2]} />
           </div>
         }
       ></Container>

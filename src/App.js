@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
-import Footer from "./components/Footer";
+import Header from "./Components/header/Header";
+import Main from "./Components/main/Main";
+import Footer from "./Components/Footer";
 import Black from "./img/varietiesOfTea/black.jpg";
 import Green from "./img/varietiesOfTea/green.jpg";
 import White from "./img/varietiesOfTea/white.jpg";

@@ -14,6 +14,10 @@ import PostImage1 from "./img/postImages/blog-image1.jpg";
 import PostImage2 from "./img/postImages/blog-image2.jpg";
 import PostImage3 from "./img/postImages/blog-image3.jpg";
 import PostImage4 from "./img/postImages/blog-image4.jpg";
+import PriorIcon1 from "./img/icons/prioritise-icon1.svg";
+import PriorIcon2 from "./img/icons/prioritise-icon2.svg";
+import PriorIcon3 from "./img/icons/prioritise-icon3.svg";
+import PriorIcon4 from "./img/icons/prioritise-icon4.svg";
 function App() {
   const data = {
     mainMenu: [
@@ -91,6 +95,28 @@ function App() {
     ],
     knowMoreDataText:
       "Join our mailing list and stay up-to-date with the latest news, promotions, and exclusive offers from our tea store. Be the first to know about new tea arrivals, seasonal blends, and special discounts. Don't miss out on the tea-rrific perks - sign up today!",
+    prioritiseDataList: [
+      {
+        title: "Single garden teas",
+        subtitle: "Complete transparency",
+        icon: PriorIcon1,
+      },
+      {
+        title: "Only Loose leaf tea",
+        subtitle: "Best Drinking Experience",
+        icon: PriorIcon2,
+      },
+      {
+        title: "Customer support",
+        subtitle: "No bots, no automated replies",
+        icon: PriorIcon3,
+      },
+      {
+        title: "Fast shipping",
+        subtitle: "Save, Convenient, Reliable",
+        icon: PriorIcon4,
+      },
+    ],
   };
 
   return (
@@ -107,6 +133,7 @@ function App() {
           data.reviewsData,
           data.postData,
           data.knowMoreDataText,
+          data.prioritiseDataList,
         ]}
       ></Main>
       <Footer></Footer>

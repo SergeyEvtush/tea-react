@@ -4,19 +4,19 @@ import Container from "../container/Container";
 import ReviewsList from "../reviewsList/ReviewsList";
 const Reviews = ({ dataReviews }) => {
   return (
-    <div>
+    <section className="reviews">
       <Container
         content={
           <div>
             <TitleBlock
               classH2={"reviews__title title-block"}
-              text={dataReviews[0].revievsTitle}
+              text={dataReviews[0]}
             />
             <ReviewsList dataReviews={dataReviews[1]} />
           </div>
         }
       />
-    </div>
+    </section>
   );
 };
 export default Reviews;

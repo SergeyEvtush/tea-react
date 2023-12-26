@@ -9,11 +9,8 @@ const Blog = ({ dataPosts }) => (
     <Container
       content={
         <div className="blog__wrapper">
-          <TitleBlock
-            classH2={"blog__title title-block"}
-            text={"Our Tea Blog"}
-          />
-          <PostList dataPosts={dataPosts} />
+          <TitleBlock classH2={"blog__title title-block"} text={dataPosts[0]} />
+          <PostList dataPosts={dataPosts[1]} />
           <ButtonBlock
             classButtonBlock={"blog__button"}
             classButton={"view-btn"}

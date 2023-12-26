@@ -13,7 +13,7 @@ const Main = ({ dataText }) => (
       <Assortment dataAssortment={[dataText[3], dataText[0]]} />
       <Reviews dataReviews={[dataText[0], dataText[4]]} />
       <Blog dataPosts={dataText[5]} />
-      <KnowMore />
+      <KnowMore dataKnowMore={dataText[6]} />
     </main>
   </div>
 );

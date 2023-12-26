@@ -89,6 +89,8 @@ function App() {
         url: "",
       },
     ],
+    knowMoreDataText:
+      "Join our mailing list and stay up-to-date with the latest news, promotions, and exclusive offers from our tea store. Be the first to know about new tea arrivals, seasonal blends, and special discounts. Don't miss out on the tea-rrific perks - sign up today!",
   };
 
   return (
@@ -104,6 +106,7 @@ function App() {
           data.mainMenu,
           data.reviewsData,
           data.postData,
+          data.knowMoreDataText,
         ]}
       ></Main>
       <Footer></Footer>

@@ -1,12 +1,12 @@
 import "./form-sending.css";
-import Input from "../input/Input";
+import InputBlock from "../inputBlock/InputBlock";
 import ButtonBlock from "../button-block/ButtonBlock";
 import InputCheckBoxLabel from "../inputCheckBoxLabel/InputCheckBoxLabel";
 
 const FormSending = () => (
   <form action="" className="mail-form">
     <div className="sending-block mail-form__send">
-      <Input
+      <InputBlock
         inputWraperClass={"sending-block__input"}
         inputType={"mail"}
         inputClass={"mail-input"}

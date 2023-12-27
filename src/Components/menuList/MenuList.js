@@ -14,7 +14,7 @@ const MenuList = ({ dataMenu }) => {
       />
     );
   });
-  const elementsMobileMenu = dataMenu[1].map((elem, index) => {
+  const elementsMobileMenu = dataMenu[1].mainMenu.map((elem, index) => {
     return (
       <ListItem
         classDiv={"mobile-menu__item-wraper"}

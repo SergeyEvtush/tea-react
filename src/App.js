@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
-import Footer from "./components/Footer";
+import Header from "./Components/header/Header";
+import Main from "./Components/main/Main";
+import Footer from "./Components/footer/Footer";
 import Black from "./img/varietiesOfTea/black.jpg";
 import Green from "./img/varietiesOfTea/green.jpg";
 import White from "./img/varietiesOfTea/white.jpg";
@@ -28,7 +28,9 @@ function App() {
       { name: "Pu-erh", foto: Puerh },
     ],
     userActions: [{ url: Cart }, { url: User }, { url: Search }],
-    mobileMenu: ["Contact Us", "Our Blog", "Shipping and Delivery"],
+	  mobileMenu: {
+		  mainMenu: ["Contact Us", "Our Blog", "Shipping and Delivery"],
+		  footerMenu: ['About Us','FAQ','Refund policy','Terms of Service']},
     titleText: {
       mainTitle: "A cup of tea is a moment of calm in the chaos of life",
       assortmentTitle: "Explore our Collections",
@@ -116,7 +118,24 @@ function App() {
         subtitle: "Save, Convenient, Reliable",
         icon: PriorIcon4,
       },
-    ],
+	  ],
+	  footerData: {
+		  footerBloqoute: {
+			  author: "Dragomir Teodorescu, Tealuxe owner",
+			  text:"Tea is a journey. It can take you to new places and open your mind to new experiences. Let every sip transport you to a world of wonder and possibility"
+		  },
+		  footerInstruction: "Please feel free to contact us via the email of phone. We would be happy to hear from you! ",
+		  contacts: {
+			  phone: {
+				  number: "+370 680 12345",
+				  url:"#"
+			  },
+			  email: {
+				  number: "info@tealuxe.com",
+				  url:"#"
+			  }
+		  }
+	  }
   };
 
   return (
@@ -136,7 +155,7 @@ function App() {
           data.prioritiseDataList,
         ]}
       ></Main>
-      <Footer></Footer>
+		  <Footer dataFooter={[data.mainMenu,data.mobileMenu,data.footerData] }></Footer>
     </div>
   );
 }

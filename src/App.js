@@ -124,7 +124,10 @@ function App() {
 			  author: "Dragomir Teodorescu, Tealuxe owner",
 			  text:"Tea is a journey. It can take you to new places and open your mind to new experiences. Let every sip transport you to a world of wonder and possibility"
 		  },
-		  footerInstruction: "Please feel free to contact us via the email of phone. We would be happy to hear from you! ",
+		  footerInstruction: {
+			  content: "Please feel free to contact us via the email of phone. We would be happy to hear from you! ",
+		  		header:"Stay In Touch"
+		  },
 		  contacts: {
 			  phone: {
 				  number: "+370 680 12345",

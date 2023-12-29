@@ -9,7 +9,18 @@ import Oolong from "./img/varietiesOfTea/oolong.jpg";
 import Puerh from "./img/varietiesOfTea/pu-erh.jpg";
 import Cart from "./img/icons/cart.svg";
 import Search from "./img/icons/search.svg";
+import Logo from './img/icons/logo.svg'
 import User from "./img/icons/user.svg";
+import Mail from "./img/icons/icon-mail.svg";
+import Phone from "./img/icons/icon-phone.svg";
+import Gray from './img/icons/gpay.svg';
+import MasterCard from './img/icons/mastercard.svg';
+import Visa from './img/icons/visa.svg';
+import PayPal from './img/icons/paypal.svg'
+import FaceBook from './img/icons/icon-facebook.svg';
+import Twitter from './img/icons/icon-twitter.svg';
+import YouTube from './img/icons/icon-youtube.svg';
+import Square from './img/icons/icon-square.svg'
 import PostImage1 from "./img/postImages/blog-image1.jpg";
 import PostImage2 from "./img/postImages/blog-image2.jpg";
 import PostImage3 from "./img/postImages/blog-image3.jpg";
@@ -128,17 +139,60 @@ function App() {
 			  content: "Please feel free to contact us via the email of phone. We would be happy to hear from you! ",
 		  		header:"Stay In Touch"
 		  },
-		  contacts: {
-			  phone: {
+		  contacts: [
+			   {name:'phone',
 				  number: "+370 680 12345",
-				  url:"#"
+				  url: "#",
+				  icon:Phone
 			  },
-			  email: {
+			   {name:'email',
 				  number: "info@tealuxe.com",
-				  url:"#"
-			  }
-		  }
-	  }
+				  url: "#",
+				  icon:Mail
+			  },
+			 
+			],
+		  painment: [
+			  {
+				  name: "mastercard",
+				  url: "#",
+				  icon: MasterCard,},
+			  {
+				  name: "visa",
+				  url: "#",
+				  icon: Visa,},
+			  {
+				  name: "gpay",
+				  url: "#",
+				  icon: Gray,},
+			  {
+				  name: "paypal",
+				  url: "#",
+				  icon: PayPal,}
+		  ],
+		  socials: [
+			  {
+				  name: "facebook",
+				  url: "#",
+			  	icon:FaceBook},
+			  {
+				  name: "youtube",
+				  url: "#",
+			  	icon:YouTube},
+			  {
+				  name: "square",
+				  url: "#",
+			  	icon:Square},
+			  {
+				  name: "twitter",
+				  url: "#",
+			  	icon:Twitter},
+		  ]
+	  },
+	  logo: {
+		name: "logo",
+		url:Logo
+	}
   };
 
   return (
@@ -158,7 +212,9 @@ function App() {
           data.prioritiseDataList,
         ]}
       ></Main>
-		  <Footer dataFooter={[data.mainMenu,data.mobileMenu,data.footerData] }></Footer>
+		  <Footer
+			  dataFooter={[data.mainMenu, data.mobileMenu, data.footerData,data.logo]}>
+			  </Footer>
     </div>
   );
 }

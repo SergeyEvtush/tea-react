@@ -3,13 +3,16 @@ import Container from '../container/Container';
 import NavigationBlock from '../navigationBlock/NavigationBlock';
 import FooterBloquote from '../footer-bloquote/FooterBloquote';
 import InstructionBlock from '../instructions-block/InstructionsBlock';
+import PaimentBlock from '../paimentBlock/PaimentBlock';
+import Contacts from '../contacts/Contacts';
 const Footer = ({ dataFooter }) => {
 	
 	return (
 		<div>
 		<footer className="footer">
 			<div className='footer__wraper'>
-				<Container content={
+					<Container content={
+						<div>
 					<div className="footer__grid-block">
 							<NavigationBlock data={[dataFooter[0], dataFooter[1]]} />
 							<FooterBloquote
@@ -23,8 +26,10 @@ const Footer = ({ dataFooter }) => {
 								paragraphClass={"instruction-block__instruction paragraf-instruction"}
 								paragraphText={dataFooter[2].footerInstruction.content}
 							/>
-						</div>
-						
+							<Contacts data={[dataFooter[2].contacts,dataFooter[2].socials,dataFooter[3]] } />
+					</div>
+							<PaimentBlock data={dataFooter[2].painment} />
+					</div>		
 				} />
 			</div>
 		</footer>

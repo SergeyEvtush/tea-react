@@ -1,0 +1,27 @@
+
+.paiment-block {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 53px;
+ }
+ .owner {
+	font-family: Open Sans;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+ }
+.paiment-systems-list {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+ }
+ .paiment-systems-list__item {
+	width: 26px;
+	height: 20px;
+	position: relative;
+	cursor: pointer;
+ }

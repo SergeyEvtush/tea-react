@@ -1,0 +1,45 @@
+.instruction-block {
+	color: #151618;
+ }
+ .instruction-block__title {
+	text-align: center;
+  margin-bottom: 20px;
+}
+.title-block-footer{
+	font-family: Cormorant;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.instruction-block__instruction {
+	text-align: center;
+	margin-bottom: 20px;
+ }
+ .paragraf-instruction{
+	font-family: Open Sans;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+ 
+ @media (min-width: 768px) {
+	.instruction-block {
+	  grid-area: C;
+	}
+	.instruction-block__title {
+		margin-bottom: 50px;
+	 }
+}
+@media (min-width: 1000px) {
+	.instruction-block {
+	  justify-items: start;
+	}
+	.instruction-block__title,
+	.instruction-block__instruction {
+	  text-align: left;
+	}
+	.instruction-block__instruction {
+		margin-bottom: 20px;
+		max-width: 270px;
+	 }
+}

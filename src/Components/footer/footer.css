@@ -1,0 +1,31 @@
+.footer__wraper {
+	position: relative;
+	background: #f7f2ea;
+	padding: 50px 0px 84px 0px;
+ }
+ @media (min-width: 768px) {
+	.footer__grid-block {
+	  display: grid;
+	  grid-template-areas:
+		 "A B"
+		 "A C"
+		 "A D";
+	  padding: 0px 54px 0px 54px;
+	}
+}
+@media (min-width: 1000px) {
+	.footer__grid-block {
+	  display: grid;
+	  grid-template-areas:
+		 "A B C"
+		 "A B D";
+	  grid-template-rows: auto 1fr;
+	  padding: 0px 10px 0px 10px;
+	  column-gap: 53px;
+	}
+}
+@media (min-width: 1100px) {
+	.footer__grid-block {
+	  column-gap: 41px;
+	}
+}

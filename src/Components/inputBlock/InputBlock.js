@@ -1,8 +1,21 @@
+import { Component } from "react";
 
-
-const InputBlock = (props) => (
-	<div className={props.inputWraperClass}>
-		<input type={props.inputType} className={props.inputClass} placeholder={props.inputPlaceholder} />
-	</div>
-);
+class InputBlock extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const { inputWraperClass, inputType, inputClass, inputPlaceholder } =
+      this.props;
+    return (
+      <div className={inputWraperClass}>
+        <input
+          type={inputType}
+          className={inputClass}
+          placeholder={inputPlaceholder}
+        />
+      </div>
+    );
+  }
+}
 export default InputBlock;

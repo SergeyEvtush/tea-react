@@ -1,6 +1,18 @@
-const BtnLink = (props) => (
-	<div className={props.btnClass }>
-		<a href={props.url} className={props.linkClass}>{props.linkText }</a>
-	</div>
-)
+import { Component } from "react";
+
+class BtnLink extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const { btnClass, url, linkClass, linkText } = this.props;
+    return (
+      <div className={btnClass}>
+        <a href={url} className={linkClass}>
+          {linkText}
+        </a>
+      </div>
+    );
+  }
+}
 export default BtnLink;

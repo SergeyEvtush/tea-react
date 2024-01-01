@@ -1,7 +1,13 @@
+import { Component } from "react";
 
-const Paragraph = (props) => {
-	return <p className={props.paragraphClass}>
-		{props.paragraphText }
-	</p>
- };
-export default Paragraph
+class Paragraph extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const { paragraphClass, paragraphText } = this.props;
+    return <p className={paragraphClass}>{paragraphText}</p>;
+  }
+}
+export default Paragraph;

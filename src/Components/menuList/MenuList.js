@@ -4,12 +4,12 @@ import ListItem from "../listItem/ListItem";
 import { Component } from "react";
 
 class MenuList extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    const { dataMenu } = this.props;
+    const { dataMenu, onOpen, open } = this.props;
+
+    let classUl = "menu__list";
+    open ? (classUl = "menu__list active") : (classUl = "menu__list");
+
     const elementsMenu = dataMenu[0].map((el, index) => {
       return (
         <ListItem
@@ -33,13 +33,13 @@ class MenuList extends Component {
       );
     });
     return (
-      <ul className="menu__list">
+      <ul className={classUl}>
         <ListItem
           classDiv={"close-btn"}
           classItem={"menu__close"}
           classLink={"close-link"}
           key={"close"}
-          text={<img src={Close} alt="close"></img>}
+          text={<img src={Close} alt="close" onClick={onOpen}></img>}
         />
         {elementsMenu}
         <li className="mobile-nav">

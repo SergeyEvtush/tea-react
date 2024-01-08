@@ -54,20 +54,24 @@
     right: 20px;
   }
   .menu__list {
-    display: none;
-    /* display: block; */
+    display: block;
     position: absolute;
     top: -200%;
     transition: all 0.5s ease 0.5s;
-    left: calc(50% - 360px / 2);
-    text-align: center;
     width: 360px;
     margin: 0 auto;
+    left: calc(50% - 360px / 2);
+    text-align: center;
     background-color: #fff;
     padding-top: 60px;
     min-height: 691px;
     z-index: 5;
   }
+  .menu__list.active {
+    top: 0%;
+    transition: all 0.5s ease 0.5s;
+  }
+
   .background-shadow {
     display: block;
     opacity: 0;

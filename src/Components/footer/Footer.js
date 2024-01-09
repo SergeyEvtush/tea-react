@@ -8,9 +8,6 @@ import Contacts from "../contacts/Contacts";
 import { Component } from "react";
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { dataFooter } = this.props;
     return (

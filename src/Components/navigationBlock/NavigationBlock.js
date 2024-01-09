@@ -3,16 +3,13 @@ import NavigationItem from "../navigationItem/NavigationItem";
 import { Component } from "react";
 
 class NavigationBlock extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { data } = this.props;
     return (
       <div className="navigation-block footer__navigation">
         <NavigationItem
           data={data[0].map((el) => {
-            return el.name;
+            return el;
           })}
           classLi={"navigation-block__list-item"}
           classA={"link-footer-navigation"}
@@ -21,11 +18,7 @@ class NavigationBlock extends Component {
           url={"https//a"}
         />
         <NavigationItem
-          data={[
-            ...[data[1].footerMenu[0]],
-            ...data[1].mainMenu,
-            ...data[1].footerMenu.slice(1),
-          ]}
+          data={data[1].subMenu.map((el) => el)}
           classLi={"navigation-block__list-item"}
           classA={"link-footer-navigation"}
           classH3={"navigation-block__title title-block-footer"}

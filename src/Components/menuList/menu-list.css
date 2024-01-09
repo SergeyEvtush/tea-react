@@ -1,7 +1,8 @@
 .link-menu {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   display: block;
+  text-transform: uppercase;
 }
 .link-menu:hover {
   transform: scale(1.2);

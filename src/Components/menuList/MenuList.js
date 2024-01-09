@@ -21,7 +21,7 @@ class MenuList extends Component {
         />
       );
     });
-    const elementsMobileMenu = dataMenu[1].mainMenu.map((elem, index) => {
+    const elementsMobileMenu = dataMenu[1].subMenu.map((elem, index) => {
       return (
         <ListItem
           classDiv={"mobile-menu__item-wraper"}

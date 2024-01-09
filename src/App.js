@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./Components/header/Header";
-import Main from "./Components/main/Main";
-import Footer from "./Components/footer/Footer";
+import Header from "./components/header/Header";
+import Main from "./components/main/Main";
+import Footer from "./components/footer/Footer";
 import Black from "./img/varietiesOfTea/black.jpg";
 import Green from "./img/varietiesOfTea/green.jpg";
 import White from "./img/varietiesOfTea/white.jpg";
@@ -37,28 +37,24 @@ function App() {
       { name: "White", foto: White },
       { name: "Oolong", foto: Oolong },
       { name: "Pu-erh", foto: Puerh },
-	  ],
-	  mainMenu: [
-		  {name:"Our propducts",url:"#"},
-		  {name:"Reviews",url:"#"},
-		  {name:"Our Blog",url:"#"},
-		  {name:"Contact Us",url:"#"},
-		  {name:"Prioritise",url:"#"},
-		  {name:"Socials",url:"#"},
-	  ],
+    ],
+    mainMenu: [
+      { name: "Our products", url: "#" },
+      { name: "Reviews", url: "#" },
+      { name: "Our Blog", url: "#" },
+      { name: "Contact Us", url: "#" },
+      { name: "Prioritise", url: "#" },
+      { name: "Socials", url: "#" },
+    ],
     userActions: [{ url: Cart }, { url: User }, { url: Search }],
     mobileMenu: {
-		 mainMenu: [
-			 { name: "Contact Us", url: "#" },
-			 { name: "Our Blog", url: "#" },
-			 { name: "Shipping and Delivery", url: "#" }
-		 ],
-		 footerMenu: [
-			 { name: "About Us", url: "#" },
-			 { name: "FAQ", url: "#" },
-			 { name: "Refund policy", url: "#" },
-			 { name: "Terms of Service", url: "#" }
-		 ],
+      subMenu: [
+        { name: "Shipping and Delivery", url: "#" },
+        { name: "About Us", url: "#" },
+        { name: "FAQ", url: "#" },
+        { name: "Refund policy", url: "#" },
+        { name: "Terms of Service", url: "#" },
+      ],
     },
     titleText: {
       mainTitle: "A cup of tea is a moment of calm in the chaos of life",
@@ -232,7 +228,7 @@ function App() {
       ></Main>
       <Footer
         dataFooter={[
-          data.mainMenu,
+          data.products,
           data.mobileMenu,
           data.footerData,
           data.logo,

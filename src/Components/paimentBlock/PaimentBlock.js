@@ -11,7 +11,7 @@ const PaimentBlock = (props) => {
 	return (
 		<div className='paiment-block'>
 				<div className="paiment-block__owner">
-						<p class="owner">© Tealuxe, 2023</p>
+						<p className="owner">© Tealuxe, 2023</p>
 					</div>
 	<div className='paiment-block__systems'>
 		<ul className='paiment-systems-list'>

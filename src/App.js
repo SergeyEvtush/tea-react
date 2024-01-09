@@ -9,18 +9,18 @@ import Oolong from "./img/varietiesOfTea/oolong.jpg";
 import Puerh from "./img/varietiesOfTea/pu-erh.jpg";
 import Cart from "./img/icons/cart.svg";
 import Search from "./img/icons/search.svg";
-import Logo from './img/icons/logo.svg'
+import Logo from "./img/icons/logo.svg";
 import User from "./img/icons/user.svg";
 import Mail from "./img/icons/icon-mail.svg";
 import Phone from "./img/icons/icon-phone.svg";
-import Gray from './img/icons/gpay.svg';
-import MasterCard from './img/icons/mastercard.svg';
-import Visa from './img/icons/visa.svg';
-import PayPal from './img/icons/paypal.svg'
-import FaceBook from './img/icons/icon-facebook.svg';
-import Twitter from './img/icons/icon-twitter.svg';
-import YouTube from './img/icons/icon-youtube.svg';
-import Square from './img/icons/icon-square.svg'
+import Gray from "./img/icons/gpay.svg";
+import MasterCard from "./img/icons/mastercard.svg";
+import Visa from "./img/icons/visa.svg";
+import PayPal from "./img/icons/paypal.svg";
+import FaceBook from "./img/icons/icon-facebook.svg";
+import Twitter from "./img/icons/icon-twitter.svg";
+import YouTube from "./img/icons/icon-youtube.svg";
+import Square from "./img/icons/icon-square.svg";
 import PostImage1 from "./img/postImages/blog-image1.jpg";
 import PostImage2 from "./img/postImages/blog-image2.jpg";
 import PostImage3 from "./img/postImages/blog-image3.jpg";
@@ -31,17 +31,35 @@ import PriorIcon3 from "./img/icons/prioritise-icon3.svg";
 import PriorIcon4 from "./img/icons/prioritise-icon4.svg";
 function App() {
   const data = {
-    mainMenu: [
+    products: [
       { name: "Black", foto: Black },
       { name: "Green", foto: Green },
       { name: "White", foto: White },
       { name: "Oolong", foto: Oolong },
       { name: "Pu-erh", foto: Puerh },
-    ],
+	  ],
+	  mainMenu: [
+		  {name:"Our propducts",url:"#"},
+		  {name:"Reviews",url:"#"},
+		  {name:"Our Blog",url:"#"},
+		  {name:"Contact Us",url:"#"},
+		  {name:"Prioritise",url:"#"},
+		  {name:"Socials",url:"#"},
+	  ],
     userActions: [{ url: Cart }, { url: User }, { url: Search }],
-	  mobileMenu: {
-		  mainMenu: ["Contact Us", "Our Blog", "Shipping and Delivery"],
-		  footerMenu: ['About Us','FAQ','Refund policy','Terms of Service']},
+    mobileMenu: {
+		 mainMenu: [
+			 { name: "Contact Us", url: "#" },
+			 { name: "Our Blog", url: "#" },
+			 { name: "Shipping and Delivery", url: "#" }
+		 ],
+		 footerMenu: [
+			 { name: "About Us", url: "#" },
+			 { name: "FAQ", url: "#" },
+			 { name: "Refund policy", url: "#" },
+			 { name: "Terms of Service", url: "#" }
+		 ],
+    },
     titleText: {
       mainTitle: "A cup of tea is a moment of calm in the chaos of life",
       assortmentTitle: "Explore our Collections",
@@ -129,70 +147,70 @@ function App() {
         subtitle: "Save, Convenient, Reliable",
         icon: PriorIcon4,
       },
-	  ],
-	  footerData: {
-		  footerBloqoute: {
-			  author: "Dragomir Teodorescu, Tealuxe owner",
-			  text:"Tea is a journey. It can take you to new places and open your mind to new experiences. Let every sip transport you to a world of wonder and possibility"
-		  },
-		  footerInstruction: {
-			  content: "Please feel free to contact us via the email of phone. We would be happy to hear from you! ",
-		  		header:"Stay In Touch"
-		  },
-		  contacts: [
-			   {name:'phone',
-				  number: "+370 680 12345",
-				  url: "#",
-				  icon:Phone
-			  },
-			   {name:'email',
-				  number: "info@tealuxe.com",
-				  url: "#",
-				  icon:Mail
-			  },
-			 
-			],
-		  painment: [
-			  {
-				  name: "mastercard",
-				  url: "#",
-				  icon: MasterCard,},
-			  {
-				  name: "visa",
-				  url: "#",
-				  icon: Visa,},
-			  {
-				  name: "gpay",
-				  url: "#",
-				  icon: Gray,},
-			  {
-				  name: "paypal",
-				  url: "#",
-				  icon: PayPal,}
-		  ],
-		  socials: [
-			  {
-				  name: "facebook",
-				  url: "#",
-			  	icon:FaceBook},
-			  {
-				  name: "youtube",
-				  url: "#",
-			  	icon:YouTube},
-			  {
-				  name: "square",
-				  url: "#",
-			  	icon:Square},
-			  {
-				  name: "twitter",
-				  url: "#",
-			  	icon:Twitter},
-		  ]
-	  },
-	  logo: {
-		name: "logo",
-		url:Logo
-	}
+    ],
+    footerData: {
+      footerBloqoute: {
+        author: "Dragomir Teodorescu, Tealuxe owner",
+        text: "Tea is a journey. It can take you to new places and open your mind to new experiences. Let every sip transport you to a world of wonder and possibility",
+      },
+      footerInstruction: {
+        content:
+          "Please feel free to contact us via the email of phone. We would be happy to hear from you! ",
+        header: "Stay In Touch",
+      },
+      contacts: [
+        { name: "phone", number: "+370 680 12345", url: "#", icon: Phone },
+        { name: "email", number: "info@tealuxe.com", url: "#", icon: Mail },
+      ],
+      painment: [
+        {
+          name: "mastercard",
+          url: "#",
+          icon: MasterCard,
+        },
+        {
+          name: "visa",
+          url: "#",
+          icon: Visa,
+        },
+        {
+          name: "gpay",
+          url: "#",
+          icon: Gray,
+        },
+        {
+          name: "paypal",
+          url: "#",
+          icon: PayPal,
+        },
+      ],
+      socials: [
+        {
+          name: "facebook",
+          url: "#",
+          icon: FaceBook,
+        },
+        {
+          name: "youtube",
+          url: "#",
+          icon: YouTube,
+        },
+        {
+          name: "square",
+          url: "#",
+          icon: Square,
+        },
+        {
+          name: "twitter",
+          url: "#",
+          icon: Twitter,
+        },
+      ],
+    },
+    logo: {
+      name: "logo",
+      url: Logo,
+    },
   };
 
   return (
@@ -205,16 +223,21 @@ function App() {
           data.titleText,
           data.paragraphTitle,
           data.bloquoteText,
-          data.mainMenu,
+          data.products,
           data.reviewsData,
           data.postData,
           data.knowMoreDataText,
           data.prioritiseDataList,
         ]}
       ></Main>
-		  <Footer
-			  dataFooter={[data.mainMenu, data.mobileMenu, data.footerData,data.logo]}>
-			  </Footer>
+      <Footer
+        dataFooter={[
+          data.mainMenu,
+          data.mobileMenu,
+          data.footerData,
+          data.logo,
+        ]}
+      ></Footer>
     </div>
   );
 }

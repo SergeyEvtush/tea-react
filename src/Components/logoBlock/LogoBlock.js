@@ -1,8 +1,17 @@
-import './logoBlock.css'
+import "./logoBlock.css";
+import { Component } from "react";
 
-const LogoBlock = (props) => (
-	<div className={props.classLogooBlock }>
-		<img src={props.url } alt="logo"/>
-	</div>
-)
-export default LogoBlock
+class LogoBlock extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const { classLogooBlock, url } = this.props;
+    return (
+      <div className={classLogooBlock}>
+        <img src={url} alt="logo" />
+      </div>
+    );
+  }
+}
+export default LogoBlock;

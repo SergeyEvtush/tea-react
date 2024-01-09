@@ -1,9 +1,12 @@
+import { Component } from "react";
 
-
-
-const H1 = (props) => {
-	return <h1 className={props.h1Class}>
-		{props.h1Text }
-	</h1>
- };
-export default H1
+class H1 extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const { h1Class, h1Text } = this.props;
+    return <h1 className={h1Class}>{h1Text}</h1>;
+  }
+}
+export default H1;

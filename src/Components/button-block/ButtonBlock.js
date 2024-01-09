@@ -1,8 +1,19 @@
-import './button-block.css'
+import "./button-block.css";
+import { Component } from "react";
 
-const ButtonBlock = (props) => (
-	<div className={props.classButtonBlock+" button-block"}>
-		<button className={props.classButton+" btn"} type={props.typeBtn}>{props.textBtn }</button>
-				</div>
-);
+class ButtonBlock extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const { classButtonBlock, classButton, typeBtn, textBtn } = this.props;
+    return (
+      <div className={classButtonBlock + " button-block"}>
+        <button className={classButton + " btn"} type={typeBtn}>
+          {textBtn}
+        </button>
+      </div>
+    );
+  }
+}
 export default ButtonBlock;

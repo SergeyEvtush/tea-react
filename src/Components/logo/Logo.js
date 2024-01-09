@@ -1,12 +1,21 @@
 import logo from "./logo.svg";
 import LinkImage from "../linkImage/LinkImage";
 import "./logo.css";
+import { Component } from "react";
 
-const Logo = (props) => (
-  <LinkImage
-    url={props.url}
-    class={props.class}
-    content={<img src={logo} alt="logo" />}
-  ></LinkImage>
-);
+class Logo extends Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const { url, classLogo } = this.props;
+    return (
+      <LinkImage
+        url={url}
+        class={classLogo}
+        content={<img src={logo} alt="logo" />}
+      ></LinkImage>
+    );
+  }
+}
 export default Logo;

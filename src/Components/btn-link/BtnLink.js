@@ -8,7 +8,7 @@ class BtnLink extends Component {
     const { btnClass, url, linkClass, linkText } = this.props;
     return (
       <div className={btnClass}>
-        <a href={url} className={linkClass}>
+			 <a href={url} className={linkClass}>
           {linkText}
         </a>
       </div>

@@ -1,8 +1,8 @@
 import { Component } from "react";
 
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
+import Header from "./Components/header/Header";
+import Main from "./Components/main/Main";
+import Footer from "./Components/footer/Footer";
 import Black from "./img/varietiesOfTea/black.jpg";
 import Green from "./img/varietiesOfTea/green.jpg";
 import White from "./img/varietiesOfTea/white.jpg";
@@ -101,29 +101,29 @@ class App extends Component {
             postTitle: "Tea Time Travels: Funny Moments from Around the World",
             postAuthor: "Robinson Crusoe",
             postImage: PostImage1,
-            postContent: "",
-            url: "",
+            postContent: "Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы даете согласие на периодическое получение от нас электронных писем о наших продуктах, рекламных акциях и другой информации, связанной с чаем.",
+            url: "#",
           },
           {
             postTitle: "Tea-rific Tales: Hilarious Stories from Tea Lovers",
             postAuthor: "Casper the Friendly Ghost",
             postImage: PostImage2,
-            postContent: "",
-            url: "",
+            postContent: "Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы даете согласие на периодическое получение от нас электронных писем о наших продуктах, рекламных акциях и другой информации, связанной с чаем.",
+            url: "#",
           },
           {
             postTitle: "The Role of Tea in Mental Health",
             postAuthor: "Joker",
             postImage: PostImage3,
-            postContent: "",
-            url: "",
+            postContent: "Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы даете согласие на периодическое получение от нас электронных писем о наших продуктах, рекламных акциях и другой информации, связанной с чаем.",
+            url: "#",
           },
           {
             postTitle: "Tea and Caffeine: Effects on the Brain and Behavior",
             postAuthor: "Author Authorius",
             postImage: PostImage4,
-            postContent: "",
-            url: "",
+            postContent: "Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы даете согласие на периодическое получение от нас электронных писем о наших продуктах, рекламных акциях и другой информации, связанной с чаем.",
+            url: "#",
           },
         ],
         knowMoreDataText:

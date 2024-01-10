@@ -26,6 +26,12 @@
   font-weight: 300;
   line-height: normal;
 }
+.post__text{
+	display:none
+}
+.post__text.active{
+	display:block
+}
 .btn-read {
   font-family: Open Sans;
   font-size: 13px;
@@ -33,6 +39,7 @@
   font-weight: 300;
   line-height: normal;
   align-self: end;
+  cursor:pointer;
 }
 .btn-read__link {
   display: block;

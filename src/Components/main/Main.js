@@ -12,7 +12,7 @@ const Main = ({ dataText }) => (
       <Bloquote dataText={dataText[2]} />
       <Assortment dataAssortment={[dataText[3], dataText[0].assortmentTitle]} />
       <Reviews dataReviews={[dataText[0].revievsTitle, dataText[4]]} />
-      <Blog dataPosts={[dataText[0].blogTitle, dataText[5],dataText[8]]} />
+      <Blog dataPosts={[dataText[0].blogTitle, dataText[5], dataText[8]]} />
       <KnowMore dataKnowMore={[dataText[0].knowMoreTitle, dataText[6]]} />
       <Prioritise dataPrioritise={[dataText[0].prioriticeTitle, dataText[7]]} />
     </main>

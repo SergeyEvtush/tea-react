@@ -2,18 +2,6 @@ import "./post.css";
 import Paragraph from "../pargraph/Paragraph";
 import { Component } from "react";
 class Post extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      openPost: false,
-    };
-  }
-  openPostText = () => {
-    this.setState(({ openPost }) => ({
-      openPost: !openPost,
-    }));
-  };
-
   render() {
     const {
       urlImage,
@@ -22,10 +10,15 @@ class Post extends Component {
       postAuthor,
       postContent,
       url,
+      id,
+      textSate,
+      textVisible,
     } = this.props;
-    const { openPost } = this.state;
+
     let postState = "post__text";
-    openPost ? (postState = "post__text active") : (postState = "post__text");
+    textVisible
+      ? (postState = "post__text active")
+      : (postState = "post__text");
     return (
       <div className="post">
         <img src={urlImage} alt={imageName} className="post__image" />
@@ -42,7 +35,8 @@ class Post extends Component {
               className={"btn-read__link"}
               onClick={(e) => {
                 e.preventDefault();
-                this.openPostText();
+
+                textSate(id);
               }}
             >
               {"Read"}

@@ -2,8 +2,6 @@ import "./post-list.css";
 import Post from "../post/Post";
 import { Component } from "react";
 class PostList extends Component {
-
-
   render() {
     const { dataPosts } = this.props;
 
@@ -11,12 +9,14 @@ class PostList extends Component {
       return (
         <li className="blog__posts-item" key={el.id}>
           <Post
-					urlImage={el.postImage}
-					imageName={"blog image"}
-					blogTitle={el.postTitle}
-					postAuthor={el.postAuthor}
-					postContent={el.postContent}
-					postState={dataPosts[1] }
+            urlImage={el.postImage}
+            imageName={"blog image"}
+            blogTitle={el.postTitle}
+            postAuthor={el.postAuthor}
+            postContent={el.postContent}
+            id={el.id}
+            textVisible={el.textVisible}
+            textSate={dataPosts[1]}
           />
         </li>
       );

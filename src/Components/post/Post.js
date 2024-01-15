@@ -22,8 +22,6 @@ class Post extends Component {
       postAuthor,
       postContent,
       url,
-      openText,
-      stateText,
     } = this.props;
     const { openPost } = this.state;
     let postState = "post__text";

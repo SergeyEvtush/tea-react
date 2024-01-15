@@ -6,9 +6,7 @@ import ButtonBlock from "../button-block/ButtonBlock";
 import { Component } from "react";
 
 class Blog extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     const { dataPosts } = this.props;
     return (
@@ -20,7 +18,7 @@ class Blog extends Component {
                 classH2={"blog__title title-block"}
                 text={dataPosts[0]}
               />
-              <PostList dataPosts={dataPosts[1]} />
+              <PostList dataPosts={[dataPosts[1],dataPosts[2]]} />
               <ButtonBlock
                 classButtonBlock={"blog__button"}
                 classButton={"view-btn"}

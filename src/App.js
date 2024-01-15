@@ -1,8 +1,8 @@
 import { Component } from "react";
 
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
+import Header from "./Components/header/Header";
+import Main from "./Components/main/Main";
+import Footer from "./Components/footer/Footer";
 import Black from "./img/varietiesOfTea/black.jpg";
 import Green from "./img/varietiesOfTea/green.jpg";
 import White from "./img/varietiesOfTea/white.jpg";
@@ -104,6 +104,8 @@ class App extends Component {
             postContent:
               "Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы даете согласие на периодическое получение от нас электронных писем о наших продуктах, рекламных акциях и другой информации, связанной с чаем.",
             url: "#",
+				  visible: false,
+				id:1
           },
           {
             postTitle: "Tea-rific Tales: Hilarious Stories from Tea Lovers",
@@ -112,6 +114,8 @@ class App extends Component {
             postContent:
               "Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы даете согласие на периодическое получение от нас электронных писем о наших продуктах, рекламных акциях и другой информации, связанной с чаем.",
             url: "#",
+				 visible: false,
+				id:2
           },
           {
             postTitle: "The Role of Tea in Mental Health",
@@ -120,6 +124,8 @@ class App extends Component {
             postContent:
               "Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы даете согласие на периодическое получение от нас электронных писем о наших продуктах, рекламных акциях и другой информации, связанной с чаем.",
             url: "#",
+				 visible: false,
+				id:3
           },
           {
             postTitle: "Tea and Caffeine: Effects on the Brain and Behavior",
@@ -128,6 +134,8 @@ class App extends Component {
             postContent:
               "Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы даете согласие на периодическое получение от нас электронных писем о наших продуктах, рекламных акциях и другой информации, связанной с чаем.",
             url: "#",
+				 visible: false,
+				id:4
           },
         ],
         knowMoreDataText:
@@ -221,6 +229,16 @@ class App extends Component {
     };
   }
 
+	openText = (id) => { 
+		this.setState(({ data }) => { 
+			const index = data.findIndex(elem => elem.id === id)
+			console.log(index);
+			
+		})
+
+
+	}
+
   render() {
     return (
       <div className="App">
@@ -240,7 +258,8 @@ class App extends Component {
             this.state.data.reviewsData,
             this.state.data.postData,
             this.state.data.knowMoreDataText,
-            this.state.data.prioritiseDataList,
+					 this.state.data.prioritiseDataList,
+				this.openText
           ]}
         ></Main>
         <Footer
